@@ -6,8 +6,12 @@ namespace WSDL.mensajes
     [ServiceContract]
     public interface Mensajes{
         [OperationContract]
-        string Agregar (string nombre);
+        int Suma (int num1, int num2);
         [OperationContract]
-        string Buscar (int id);
+        int Resta (int num1, int num2);
+        [OperationContract]
+        int Multiplicacion (int num1, int num2);
+        [OperationContract]
+        double Division (int num1, int num2);
     }
 }

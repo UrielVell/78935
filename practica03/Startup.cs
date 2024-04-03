@@ -30,7 +30,7 @@ namespace soap_test
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSoapEndpoint<Mensajes>("/soap.asmx", new SoapEncoderOptions(), 
+                app.UseSoapEndpoint<Mensajes>("/calculadora.asmx", new SoapEncoderOptions(), 
                     SoapSerializer.XmlSerializer);
             }
 
